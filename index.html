@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" onkeyup="if(event.keyCode == 32 || event.keyCode == 38){ jump() }">
+  <head>
+    <meta charset="utf-8">
+    <title>Dino Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="hdng">
+      Press Space Key Or Up-arrow Key to jump
+    </div>
+
+    <div id="screen">
+      <hr>
+      <div id="character">
+        <img src="character.png" alt="">
+      </div>
+      <div id="cactus">
+        <img src="image.png" alt="">
+      </div>
+      <div class="result">
+        <h1>GAME OVER</h1>
+        <p id="score">Score:</p>
+        <button id="btn" onclick="location.reload()">Restart</button>
+      </div>
+    </div>
+    <audio id="sound" src="sound.mp3"></audio>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
